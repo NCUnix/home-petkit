@@ -1,0 +1,35 @@
+name: Release Draft
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Package Codex pets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          for pet_dir in codex/pets/*/; do
+            [ -d "$pet_dir" ] || { echo "No Codex pets found" >&2; exit 1; }
+            pet_name="${pet_dir%/}"
+            pet_name="${pet_name##*/}"
+            tar -czf "dist/codex-${pet_name}.tar.gz" -C codex/pets "$pet_name"
+          done
+
+      - name: Upload draft release
+        uses: softprops/action-gh-release@v3
+        with:
+          draft: true
+          files: dist/*.tar.gz
+          fail_on_unmatched_files: true
