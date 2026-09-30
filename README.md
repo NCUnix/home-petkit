@@ -15,6 +15,8 @@ tar -xzf codex-little-home.tar.gz -C "${CODEX_HOME:-$HOME/.codex}/pets"
 
 ## Pets
 
+Little Home uses Codex sprite v2, with nine animation states and sixteen look directions.
+
 <table>
   <tr>
     <td width="180" height="180" align="center" valign="middle">

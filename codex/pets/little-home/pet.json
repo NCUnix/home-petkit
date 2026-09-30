@@ -2,5 +2,6 @@
   "id": "little-home",
   "displayName": "Little Home",
   "description": "A pixel pet for Little Home.",
+  "spriteVersionNumber": 2,
   "spritesheetPath": "spritesheet.webp"
 }
