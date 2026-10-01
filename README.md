@@ -13,7 +13,7 @@ mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets"
 tar -xzf codex-little-home.tar.gz -C "${CODEX_HOME:-$HOME/.codex}/pets"
 ```
 
-For Star Home, use `codex-star-home.tar.gz` instead.
+For Star Home or Little Red Hood, use `codex-star-home.tar.gz` or `codex-red-hood-home.tar.gz` instead.
 
 ## Pets
 
@@ -25,9 +25,13 @@ For Star Home, use `codex-star-home.tar.gz` instead.
     <td width="180" height="180" align="center" valign="middle">
       <img src="artwork/star-home/base-front.png" alt="Star Home" width="175">
     </td>
+    <td width="180" height="180" align="center" valign="middle">
+      <img src="artwork/red-hood-home/base-front.png" alt="Little Red Hood" width="148">
+    </td>
   </tr>
   <tr>
     <td align="center"><strong>Little Home</strong></td>
     <td align="center"><strong>Star Home</strong></td>
+    <td align="center"><strong>Little Red Hood</strong></td>
   </tr>
 </table>
