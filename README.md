@@ -13,8 +13,6 @@ mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets"
 tar -xzf codex-little-home.tar.gz -C "${CODEX_HOME:-$HOME/.codex}/pets"
 ```
 
-For Star Home or Little Red Hood, use `codex-star-home.tar.gz` or `codex-red-hood-home.tar.gz` instead.
-
 ## Pets
 
 <table>
